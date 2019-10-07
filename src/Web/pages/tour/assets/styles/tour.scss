@@ -1,0 +1,94 @@
+@import './../../../../../globalAssets/styles/variables';
+.tour-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: $blackTone;
+  text-align: center;
+  &__logo {
+    width: 10%;
+    margin: 20vh auto 0;
+  }
+  &__description {
+    font-size: $default-font-size;
+    font-family: $poppins;
+    color: $offWhite;
+    text-align: center;
+    margin: 20px auto 0;
+    width: 60%;
+    line-height: 20px;
+    font-weight: 400;
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+  &__primary-button {
+    color: $white;
+    background: $primary;
+    border-radius: 150px;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 50px;
+    &:hover {
+      background: $primaryDark;
+      transform: translateY(-10px);
+      box-shadow: 0 10px 0px -6px $lightBlackTone;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__secondary-button {
+    color: $lightBlackTone;
+    background: transparent;
+    padding: 10px 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+    &:hover {
+      color: $lightGrey;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__logo-sub {
+    width: 10%;
+    margin: 3% auto 3%;
+  }
+}
+.layout-container {
+  display: inline-flex;
+  color: white;
+  width: 100%;
+  div {
+    width: 50%;
+    padding: 10px;
+    img {
+      width: 50%;
+    }
+    .title {
+      text-align: left;
+      margin-left: 40px;
+      font-family: $poppins;
+      font-size: 2rem;
+      margin-top: 15%;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .subtitle {
+      text-align: left;
+      margin-left: 40px;
+      font-family: $poppins;
+      font-size: 1.3rem;
+      width: 65%;
+    }
+  }
+}
