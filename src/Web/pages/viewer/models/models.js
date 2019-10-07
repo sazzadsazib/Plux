@@ -10,6 +10,9 @@ export const viewer = {
     ...initialState,
   },
   reducers: {
+    updateTour(state, payload) {
+      return { ...state, isNew: payload };
+    },
     clearState() {
       return { ...initialState };
     },
