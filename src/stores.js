@@ -2,7 +2,7 @@ import { init } from '@rematch/core';
 import createRematchPersist from '@rematch/persist';
 import createLoadingPlugin from '@rematch/loading';
 import createEncryptor from 'redux-persist-transform-encrypt';
-import { viewer } from './pages/viewer/models/models';
+import { viewer } from './Web/pages/viewer/models/models';
 
 const encryptor = createEncryptor({
   secretKey: process.env.REACT_APP_SECRET_KEY,
