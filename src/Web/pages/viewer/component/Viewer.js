@@ -6,6 +6,7 @@ class Viewer extends Component {
   componentDidMount() {
     if (this.props.isNew) {
       navigate('/get-started');
+      window.location.reload();
     }
   }
   render() {
